@@ -37,7 +37,7 @@ jobs:
 
       - name: Build Windows desktop application
         run: |
-          python -m PyInstaller --noconfirm --clean --windowed --name Lyrical --collect-all PyQt6 --collect-all moviepy --collect-all imageio_ffmpeg --copy-metadata imageio --copy-metadata imageio-ffmpeg --add-data "themes;themes" --add-data "input;input" --add-data "assets;assets" src/gui/main.py
+          python -m PyInstaller --noconfirm --clean --windowed --name Lyrical --collect-all PyQt6 --collect-all moviepy --collect-all imageio_ffmpeg --copy-metadata imageio --copy-metadata imageio-ffmpeg --add-data "themes;themes" --add-data "assets;assets" src/gui/main.py
 
       - name: Package Windows application
         shell: pwsh
